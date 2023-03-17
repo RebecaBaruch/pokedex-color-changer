@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    transition: all 1s ease-in-out;
+}
+
+body{
+    overflow: hidden;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 80);
+}
+
+.pokedex{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    width: 1040px;
+    height: 44%;
+}
+
+.pokemon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 100%; 
+    border-radius: 12px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.094);
+
+    cursor: pointer;
+}
+
+.pikachu{
+    background-color: rgb(255, 255, 80);
+}
+
+.bulbasaur{
+    background-color: rgb(110, 255, 135);
+}
+
+.charmander{
+    background-color: rgb(255, 194, 89);
+}
+
+.squirtle{
+    background-color: rgb(110, 197, 255);
+}
+
+.pokemon img{
+    width: 50%;
+}
+
+.squirtle img{
+    width: 70%;
+}
+
+.highlight{
+    width: 25%;
+    height: 120%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .pokedex{
+        flex-direction: column;
+        gap: 20px;
+        height: 80%;
+        width: 80%;
+    }
+
+    .pokemon{
+        width: 100%;
+    }
+
+    .pokemon img{
+        width: 30%;
+    }
+
+    .squirtle img{
+        width: 40%;
+    }
+
+    .highlight{
+        height: 190%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .pokedex{
+        flex-direction: column;
+        gap: 20px;
+        height: 80%;
+        width: 80%;
+    }
+
+    .pokemon{
+        width: 100%;
+    }
+
+    .pokemon img{
+        width: 20%;
+    }
+
+    .squirtle img{
+        width: 30%;
+    }
+
+    .highlight{
+        height: 200%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .pokedex{
+        flex-direction: row;
+        gap: 20px;
+        gap: 20px;
+        align-items: center;
+        width: 80%;
+        height: 50%;
+    }
+
+    .highlight{
+        width: 130%;
+        height: 120%;
+    }
+
+    .pokemon img{
+        width: 50%;
+    }
+
+    .squirtle img{
+        width: 70%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...}*/
